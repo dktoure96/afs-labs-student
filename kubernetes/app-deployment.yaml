@@ -20,11 +20,11 @@ spec:
     spec:
       containers:
       - envFrom:
+        - configMapRef:
+            name: feature-toggle
         - secretRef:
             name: db-secret
         name: app-deployment
         image: registry.dev.afsmtddso.com/d-toure-harbor-project/app:b8efe52-0c02dee
         ports:
         - containerPort: 5000
-
-        //comment
