@@ -23,6 +23,6 @@ spec:
         - secretRef:
             name: db-secret
         name: db-deployment
-        image: registry.dev.afsmtddso.com/d-toure-harbor-project/db:971c881-0c02dee
+        image: registry.dev.afsmtddso.com/d-toure-harbor-project/db:b8efe52-0c02dee
         ports:
         - containerPort: 5432
